@@ -1,0 +1,100 @@
+@media (max-width: 950px){
+    .container .content .cont1 #information {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        margin-bottom: 25%;
+    }
+    .container .content .cont1 #information .div1 {
+        width: 40%;
+    }
+    .container .content .cont2 #categories .cards .div3 .littleCard {
+        width: 50%;
+        height: 7vh;
+        position: absolute;
+        top: 70%;
+        left: 45%;
+    }
+    .container .content .cont2 #categories .cards .card .littleCard h3,
+    .container .content .cont2 #categories .cards .card .littleCard p {
+        font-size: 13px;
+    }
+    .container #about {
+        flex-wrap: wrap;
+        margin-bottom: 20%;
+        justify-content: center;
+        height: 100vh;
+    }
+    .container #about .image {
+        width: 60%;
+        height: 50vh;
+        margin-top: 20%;
+        margin-left: 0%;
+    }
+    .container #about .par {
+        width: 60%;
+        margin-left: 0%;
+    }
+    .container #categories {
+        margin-top: 100%;
+        flex-wrap: wrap;
+    }
+    .container #categories .cards {
+        grid-template-areas:"a a"
+                            "b c"
+                            "d d";
+    }
+    .container #categories .cards .card .littleCard {
+        /* width: 50%; */
+        display: none;
+    }
+    .container .popular {
+        height: 140vh;
+    }
+    .container .popular .Cards {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+    .container .popular .Cards .card {
+        width: 45%;
+        height: 55vh;
+    }
+    .container #instructors {
+        height: 130vh;
+    }
+    .container #instructors .instructorCards {
+        flex-wrap: wrap;
+        /* width: 50%; */
+    }
+    .container #instructors .instructorCards .card {
+        width: 40%;
+    }
+    .container #testimonials .testCards .card {
+        /* width: 30%; */
+        height: 43vh;
+    }
+    .container #testimonials .testCards .card .text {
+        font-size: 13px;
+    }
+    .container #testimonials .testCards .card h2,
+    .container #testimonials .testCards .card h3 {
+        font-size: 15px;
+    }
+    .container #footer .Up {
+        height: 80vh;
+        flex-wrap: wrap;
+    }
+    .container #footer .Up .quickLink,
+    .container #footer .Up .contact,
+    .container #footer .Up .gallery,
+    .container #footer .Up .newsLetter {
+        width: 40%;
+    }
+    .container .up {
+        width: 5%;
+    }
+    .container #head ul li {
+        display: none;
+    }
+}

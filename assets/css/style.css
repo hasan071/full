@@ -1,0 +1,1025 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container #head {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 999;
+}
+.container #head .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 2%;
+    background-color: transparent;
+    display: none;
+}
+
+.container #head .logo {
+    width: 40%;
+}
+
+.container #head ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container #head ul li {
+    list-style: none;
+}
+
+.container #head ul li a {
+    width: 50%;
+    color: gray;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: cursive;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.container #head ul li a:hover,
+.container #head ul li.active a {
+    color: rgb(0, 199, 199);
+    text-shadow: 0px 0px 2px rgb(0, 199, 199);
+}
+
+.container #head ul .pages {
+    position: relative;
+}
+
+.container #head ul .pages ul {
+    display: inline-block;
+    width: max-content;
+    background-color: white;
+    padding: 26%;
+    position: absolute;
+    top: 116%;
+    left: 0%;
+    z-index: 1000;
+}
+
+.container #head ul .pages ul li {
+    margin-bottom: 12%;
+}
+
+.container #head ul .pages ul li a:hover {
+    color: rgb(0, 199, 199);
+}
+
+.container #head ul .join {
+    background-color: rgb(1, 221, 221);
+    color: white;
+    padding: 2% 6%;
+}
+
+.container #head ul .join a {
+    color: white;
+}
+
+.container #head ul .join a:hover {
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+
+.container #header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container #header .slides .slide {
+    display: none;
+    width: 100%;
+    height: 100vh;
+}
+
+.container #header .slides .slide.active {
+    display: block;
+}
+
+.container #header .prev{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    background-color: transparent;
+    padding: 0.5% 1%;
+    border-radius: 9%;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+}
+
+.container #header .next {
+    position: absolute;
+    top: 44%;
+    right: 20%;
+    background-color: transparent;
+    padding: 0.5% 1%;
+    border-radius: 9%;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+}
+
+.container #header .prev:hover,
+.container #header .next:hover {
+    background-color: rgb(0, 199, 199);
+    color: white;
+}
+
+.container #header .cover {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.319);
+}
+
+.container .paragraph {
+    position: absolute;
+    top: 26%;
+    left: 8%;
+}
+
+.container .paragraph h3 {
+    color: rgb(0, 199, 199);
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 22px;
+}
+
+.container .paragraph h1 {
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.container .paragraph p {
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.container .paragraph .read,
+.container #about .par .read {
+    background-color: rgb(0, 199, 199);
+    color: white;
+    padding: 2% 3%;
+    border: none;
+    border-radius: 13px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-top: 4%;
+    transition: 0.5s;
+}
+
+.container .paragraph .joinNow {
+    background-color: white;
+    color: black;
+    padding: 2% 3%;
+    border: none;
+    border-radius: 13px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-top: 4%;
+    transition: 0.5s;
+}
+
+.container .paragraph .joinNow:hover {
+    background-color: rgb(0, 199, 199);
+    color: white;
+    border: 2px solid white;
+}
+
+.container .paragraph .read:hover,
+.container #about .par .read:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(0, 199, 199);
+}
+
+.container .up {
+    position: fixed;
+    width: 2%;
+    height: 5vh;
+    top: 93%;
+    right: 2%;
+    padding: 0.5% 0.5%;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(0, 199, 199);
+    color: white;
+    transition: 0.5s;
+}
+
+.container .up:hover {
+    background-color: white;
+    color: rgb(0, 199, 199);
+    border: 2px solid rgb(0, 199, 199);
+}
+
+.container #information {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.container #information .div1 {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(189, 239, 239, 0.452);
+    border-radius: 9px;
+    transition: 0.5s;
+}
+
+.container #information .div1 i {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 40px;
+    color: rgb(0, 199, 199);
+}
+
+.container #information .div1 h2  {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.container #information .div1 p  {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.container #information .div1:hover,
+.container #information .div1:hover i {
+    color: white;
+    background-color: rgb(0, 199, 199);
+    
+}
+
+.container #about {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.container #about .image {
+    width: 40%;
+    height: 93%;
+    background-image: url("../images/about.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 9px;
+    margin-left: 10%;
+}
+
+.container #about .par {
+    width: 40%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.container #about .par .us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container #about .par .us .lines {
+    width: 30%;
+    height: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.container #about .par .us .lines .line1 {
+    width: 38%;
+    height: 2.3px;
+    background-color: rgb(0, 199, 199);
+    margin-top: 7%;
+    margin-left: 12%;
+}
+
+.container #about .par .us .lines .line2 {
+    width: 50%;
+    height: 2.5px;
+    background-color: rgb(0, 199, 199);
+    margin-left: 12%;
+}
+
+.container #about .par .us h3 {
+    color: rgb(0, 199, 199);
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 22px;
+}
+
+.container #about .par h1 {
+    color: black;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+.container #about .par .p1 {
+    color: rgba(0, 0, 0, 0.347);
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.container #about .par .p2 {
+    color: rgba(0, 0, 0, 0.347);
+}
+
+.container .points {
+    width: 80%;
+    height: 16vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    margin-top: 5%;
+}
+
+.container .points .point {
+    width: 40%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    align-items: center;
+    /* margin-top: 5%; */
+    gap: 10px;
+}
+
+.container .points .point i {
+    /* font-size: 20px; */
+    color: rgb(0, 199, 199);
+}
+
+.container #categories {
+    width: 100%;
+    height: 80vh;
+    margin-top: 3%;
+}
+
+.container #categories .title,
+.container .popular .title,
+.container #instructors .title,
+.container #testimonials .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #categories .title h3,
+.container .popular .title h3,
+.container #instructors .title h3,
+.container #testimonials .title h3 {
+    color: rgb(0, 199, 199);
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 22px;
+}
+
+.container #categories .title .lines1,
+.container .popular .title .lines1,
+.container #instructors .title .lines1,
+.container #testimonials .title .lines1 {
+    width: 5%;
+    height: 4vh;
+}
+
+.container #categories .title .lines2,
+.container .popular .title .lines2,
+.container #instructors .title .lines2,
+.container #testimonials .title .lines2 {
+    width: 5%;
+    height: 4vh;
+}
+
+.container #categories .title .lines1 .line1,
+.container .popular .title .lines1 .line1,
+.container #instructors .title .lines1 .line1,
+.container #testimonials .title .lines1 .line1 {
+    width: 38%;
+    height: 2px;
+    background-color: rgb(0, 199, 199);
+    margin-top: 16%;
+    margin-bottom: 7%;
+    margin-left: 30%;
+}
+
+.container #categories .title .lines1 .line2,
+.container .popular .title .lines1 .line2,
+.container #instructors .title .lines1 .line2,
+.container #testimonials .title .lines1 .line2 {
+    width: 68%;
+    height: 2px;
+    background-color: rgb(0, 199, 199);
+    margin-left: 1%;
+}
+
+.container #categories .title .lines2 .line1,
+.container .popular .title .lines2 .line1,
+.container #instructors .title .lines2 .line1,
+.container #testimonials .title .lines2 .line1 {
+    width: 38%;
+    height: 2px;
+    background-color: rgb(0, 199, 199);
+    margin-top: 16%;
+    margin-bottom: 7%;
+    margin-left: 30%;
+}
+
+.container #categories .title .lines2 .line2,
+.container .popular .title .lines2 .line2,
+.container #instructors .title .lines2 .line2,
+.container #testimonials .title .lines2 .line2 {
+    width: 68%;
+    height: 2px;
+    background-color: rgb(0, 199, 199);
+    margin-left: 30%;
+}
+
+.container #categories .baseTitle h1,
+.container .popular .baseTitle h1,
+.container #instructors .baseTitle h1,
+.container #testimonials .baseTitle h1 {
+    text-align: center;
+    margin-top: 1%;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.container #categories .cards {
+    width: 80%;
+    height: 60vh;
+    display: grid;
+    grid-template-areas:"a a b"
+                        "c d b";
+    gap: 26px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.container #categories .cards .div1 {
+    background-image: url(../images/cat-1.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: a;
+    position: relative;
+    transition: 0.5s;
+}
+.container #categories .cards .div2 {
+    background-image: url(../images/cat-4.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: b;
+    position: relative;
+    transition: 0.5s;
+}
+.container #categories .cards .div3 {
+    background-image: url(../images/cat-3.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: c;
+    position: relative;
+    transition: 0.5s;
+}
+.container #categories .cards .div4 {
+    background-image: url(../images/cat-2.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: d;
+    position: relative;
+    transition: 0.5s;
+}
+
+.container #categories .cards .div1:hover,
+.container #categories .cards .div2:hover,
+.container #categories .cards .div3:hover,
+.container #categories .cards .div4:hover {
+    transform: scale(1.1);
+}
+
+.container #categories .cards .div1 .littleCard {
+    width: 20%;
+    height: 6vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 74%;
+    left: 79%;
+    box-shadow: 0px 2px 5px rgb(1, 221, 221);
+}
+
+
+.container #categories .cards .div2 .littleCard {
+    width: 45%;
+    height: 7vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 86%;
+    left: 52%;
+    box-shadow: 0px 2px 5px rgb(1, 221, 221);
+}
+
+.container #categories .cards .div3 .littleCard {
+    width: 40%;
+    height: 6vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 74%;
+    left: 57%;
+    box-shadow: 0px 2px 5px rgb(1, 221, 221);
+}
+
+.container #categories .cards .div4 .littleCard {
+    width: 30%;
+    height: 6vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 74%;
+    left: 67%;
+    box-shadow: 0px 2px 5px rgb(1, 221, 221);
+}
+
+.container #categories .cards .card .littleCard p {
+    color: rgb(0, 199, 199);
+    /* font-weight: bold; */
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.container .popular {
+    width: 100%;
+    height: 80vh;
+    margin-top: 3%;
+}
+
+.container .popular .Cards {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.container .popular .Cards .card {
+    width: 27%;
+    height: 50vh;
+    border-radius: 9px;
+    background-color: rgb(225, 243, 243);
+    border: 1px solid rgb(0, 199, 199);
+}
+
+.container .popular .Cards .card .img {
+    width: 100%;
+    background-position: center;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.container .popular .Cards .card .img img {
+    width: 100%;
+    height: 30vh;
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 9px;
+    transition: 0.5s;
+}
+
+.container .popular .Cards .card img:hover,
+.container #instructors .instructorCards .img img:hover {
+    transform: scale(1.1);
+}
+
+.container .popular .Cards .card h3 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.container .popular .Cards .card p {
+    text-align: center;
+    margin-top: 2%;
+    color: rgb(0, 199, 199);
+}
+
+.container .popular .Cards .card h4 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.container .popular .Cards .card .cardFoot {
+    width: 100%;
+}
+
+.container .popular .Cards .card .cardFoot table {
+    width: 100%;
+    border-radius: 20px;
+    border-collapse: collapse;
+    margin-top: 2%;
+    height: 2vh;
+}
+
+.container .popular .Cards .card .cardFoot table th i {
+    color: rgb(0, 199, 199);
+}
+
+.container #instructors {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.container #instructors .instructorCards {
+    width: 80%;
+    /* height: 60vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    gap: 20px;
+}
+
+.container #instructors .instructorCards .card {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(225, 243, 243);
+    position: relative;
+}
+
+.container #instructors .instructorCards .img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container #instructors .instructorCards .img img {
+    width: 100%;
+    height: 36vh;
+    transition: 0.5s;
+}
+
+.container #instructors .instructorCards .card .social {
+    width: 60%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(225, 243, 243);
+    border-radius: 9px;
+    padding: 8% 31%;
+    position: absolute;
+    top: 66%;
+    left: 20%;
+}
+
+.container #instructors .instructorCards .card .social i {
+    color: white;
+    background-color: rgb(0, 199, 199);
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.container #instructors .instructorCards .card h3 {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 17px;
+    margin-top: 7%;
+}
+
+.container #instructors .instructorCards .card p {
+    font-family: monospace;
+    font-size: 15px;
+    margin-top: 3%;
+}
+
+.container #testimonials {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.container #testimonials .viewPort {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.container #testimonials .testCards {
+    /* width: 100%;
+    height: 60vh; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+    gap: 20px;
+    transform: translate(38%);
+    transition: 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+    will-change: scroll-position;
+    /* filter: blur(5px); */
+}
+
+.container #testimonials .testCards .card {
+    width: 25%;
+    height: 50vh;
+    /* background-color: rgb(225, 243, 243); */
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 0%;
+    gap: 20px;
+    filter: blur(5px);
+    transform: scale(0.7);
+    transition: ease-in-out;
+}
+
+.container #testimonials .testCards .card.active {
+    filter: blur(0px);
+    transform: scale(1.1);
+}
+
+.container #testimonials .testCards .card .img {
+    width: 22%;
+    height: 10vh;
+    /* background-size: 100% 100%; */
+    /* background-position: center; */
+    border-radius: 50%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1% 1%; */
+    background-color: rgb(225, 243, 243);
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+.container #testimonials .testCards .card .img img {
+    width: 85%;
+    /* height: 100%; */
+    border-radius: 50%;
+}
+
+.container #testimonials .testCards .card h3 {
+    opacity: 0.5;
+}
+
+.container #testimonials .testCards .card .text {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(225, 243, 243);
+    padding: 4% 2%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px rgb(1, 221, 221);
+}
+
+.container #testimonials .viewPort .but1 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    border: 1px solid rgb(1, 221, 221);
+    border-radius: 50%;
+    padding: 0.3% 1%;
+    background-color: transparent;
+    font-size: 40px;
+    color: rgb(1, 221, 221);
+    transition: 0.5s;
+}
+
+.container #testimonials .viewPort .but2 {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    border: 1px solid rgb(1, 221, 221);
+    border-radius: 50%;
+    padding: 0.3% 1%;
+    background-color: transparent;
+    font-size: 40px;
+    color: rgb(1, 221, 221);
+    transition: 0.5s;
+}
+
+.container #testimonials .viewPort .but1:hover,
+.container #testimonials .viewPort .but2:hover {
+    color: white;
+    background-color: rgb(1, 221, 221);
+}
+
+.container #footer {
+    width: 100%;
+    background-color: rgb(20, 20, 68);
+}
+
+.container #footer .Up {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.container #footer .Up .quickLink {
+    width: 25%;
+    color: white;
+    margin-top: 2%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.container #footer .Up .quickLink p {
+    width: 50%;
+    transition: 1s;
+}
+
+.container #footer .Up .quickLink p:hover {
+    transform: scaleX(1.2);
+    color: rgb(1, 221, 221);
+}
+
+.container #footer .Up .contact {
+    width: 25%;
+    color: white;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.container #footer .Up .contact .social {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container #footer .Up .contact .social i {
+    transition: 0.5s;
+}
+
+.container #footer .Up .contact .social i:hover {
+    transform: scale(1.7);
+    color: rgb(0, 199, 199);
+}
+
+.container #footer .Up .gallery {
+    width: 25%;
+    height: 7vh;
+    color: white;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container #footer .Up .gallery .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.container #footer .Up .gallery .img {
+    width: 25%;
+    overflow: hidden;
+}
+
+.container #footer .Up .gallery img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.container #footer .Up .gallery img:hover {
+    transform: scale(1.3);
+}
+
+.container #footer .Up .newsLetter {
+    width: 25%;
+    margin-top: 2%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.container #footer .Up .newsLetter .input {
+    width: 76%;
+    height: 7vh;
+    background-color: white;
+}
+
+.container #footer .Up .newsLetter .input input {
+    width: 75%;
+    height: 100%;
+    border: none;
+    padding: 3%;
+    outline: none;
+}
+
+.container #footer .Up .newsLetter .input .sign {
+    /* width: 100%; */
+    height: 80%;
+    border: none;
+    background-color: rgb(0, 199, 199);
+    padding: 2% 2%;
+    margin-right: 2%;
+    color: white;
+}
+
+.container #footer .Down {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #footer .Down .line {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+}
+
+.container #footer .Down p {
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container #footer .Down p span {
+    color: rgb(1, 221, 221);
+}
+
+.container .content .cont1.active,
+.container .content .cont2.active {
+    display: block;
+}
